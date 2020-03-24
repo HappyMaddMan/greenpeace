@@ -1,8 +1,9 @@
-*{
+* {
 	margin: 0px;
 	box-sizing: border-box;
 	font-family: Helvetica, sans-serif;
 }
+
 .center{
 	text-align: center;
 	align-content: center;
@@ -12,6 +13,7 @@
 .logo{
 	margin-top: 25px;
 	height: 7.5vh;
+	max-width: 90vw;
 }
 header{
 	min-height: 100vh;
@@ -21,10 +23,9 @@ header{
 	background-position: center;
 }
 header h1{
-	font-size: 5vh;
+	font-size: 6.5vh;
 	color: white;
-	margin: 2.5% 20%;
-	margin-top: 7.5%;
+	margin: 7.5% 0 2.5% 10%;
 }
 header h5{
 	text-decoration: underline;
@@ -37,11 +38,11 @@ header h5{
 	display: inline-block;
 }
 header > div > a > img {
-	height: 7vh;
+	height: 5vh;
 	transform: translateY(40%);
 	background: white;
-	padding:10px;
-	border-radius: 20px;
+	padding: 8px 20px;
+	border-radius: 30px;
 }
 body{
 	background: #ADC0CF;
@@ -51,10 +52,8 @@ body{
 	grid-template-columns: 50px 3fr 60px 4fr 50px;
 	color: white;
 }
-.startCampaign > * {
-	margin: 15px;
-}
-.startCampaign{
+
+.startCampaign {
 	background: #6c0;
 	grid-column-start: 2;
 	grid-column-end: 3;
@@ -67,18 +66,14 @@ body{
 	margin-bottom: 0px;
 	margin-top: 0px;
 }
-.startCampaign input{
-	width: 60%;
-	padding: 10px;
-	margin-top: 0px;
-	/*border-radius: 20px;*/
-}
+
 .startCampaign > p{
 	margin-left: 30px; 
 }
 .startCampaign > h6{
 	margin-bottom: 80px;
-	font-size: 2em
+	font-size: 2.5em;
+	text-transform: uppercase;
 }
 .startCampaign button{
 	display: block;
@@ -89,6 +84,62 @@ body{
 .startCampaign button h6{
 	font-size: 1.8em;
 }
+
+.startCampaign .form {
+	margin-top: 50px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.form .group {
+	margin-bottom: 32px;
+}
+
+.form .group label {
+	display: block;
+	margin-bottom: 8px;
+	padding-left: 16px;
+}
+
+.form .group input[type=text],
+.form .group input[type=email] {
+	width: 100%;
+	padding: 16px;
+	font-size: 16px;
+}
+
+.form > label > input[type=checkbox] {
+	margin-left: 16px;
+	margin-right: 4px;
+}
+
+.form > label {
+	display: block;
+	margin-bottom: 64px;
+}
+
+.startCampaign .form button {
+	display: flex;
+	align-items: center;
+	padding: 8px 32px;
+	font-size: 20px;
+	text-transform: uppercase;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 16px;
+	border: 2px solid #666;
+}
+
+.icon-plus {
+	display: inline-block;
+	background: url(img/plus-icon.svg) no-repeat;
+	background-size: 32px;
+	width: 32px;
+	height: 32px;
+	margin-right: 8px;
+}
+
 .where{
 	margin-bottom: 0px;
 }
@@ -136,7 +187,7 @@ body{
 .next {
   cursor: pointer;
   position: absolute;
-  top: 69%;
+  top: 40%;
   width: auto;
   padding: 16px;
   margin-top: -50px;
@@ -186,8 +237,7 @@ body{
 /* Six columns side by side */
 .column {
   float: left;
-  max-width: 16.66%;
-  max-height: 50px;
+  width: 16.66%;
 }
 
 /* Add a transparency effect for thumnbail images */
@@ -218,40 +268,56 @@ body{
 	padding-top: 50px;
 	padding-bottom: 75px;
 }
-.containerFlex{
+.containerFlex {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
 	padding-bottom: 150px;
 }
-.article{
+.article {
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
 	width: 40%;
 	position: relative;
 	margin: 50px 0px;
 }
-.article img{
-	/*width: 40%;*/
-	width: 30%;
-	display: inline-block;
-	float: left;
-	margin: 20px;
-	margin-top: 0px;
+.article .article-image {
+	width: 200px;
+	padding-right: 16px;
+	flex-shrink: 0;
 }
+
+.article .article-image img {
+	width: 100%;
+	height: 100%;
+}
+
 b{
 	font-weight: 900;
 	margin-right: 25px;
 }
-.article > h6{
-	color:#2980B9;
+.article .article-text h6 {
+	color: #3B6481;
+	font-weight: normal;
+	font-size: 12px;
 }
-.article > h5{
+.article .article-text h5 {
 	font-weight: 900;
-	margin: 10px;
+	margin: 8px 0;
+	font-size: 16px;
 }
-.article > span{
-	display: block;
-	margin-bottom: 10px;
+
+.article .article-text .byline {
+	margin: 8px 0;
 }
+
+.byline {
+	font-size: 14.5px;
+	font-weight: lighter;
+	color: #777;
+}
+
 a{
 	text-decoration: none;
 	color: black;
@@ -260,12 +326,14 @@ a{
 	background: #fff;
 	width: 100%;
 }
-.learnFooter > h1{
+.learnFooter > h2 {
 	color: white;
 	background: #66CC00;
 	float: right;
 	transform: translateY(-100%);
 	padding: 30px 100px;
+	text-transform: uppercase;
+	font-size: 32px;
 }
 
 #memes{
@@ -278,51 +346,64 @@ a{
 	margin-left: 1%;
 	background: #D1D1D1;
 }
-#game img{
-	width: 80%;
-	margin-left: 10%;
+
+#game img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
 }
+
 footer{
 	width: 98%;
 	margin-left: 1%;
 	background: #fff;
-	padding-bottom: 100px;
+	padding-bottom: 32px;
+	margin-bottom: 32px;
 }
-footer > img{
-	width: 40%;
+footer > img {
+	width: 35%;
 	display: block;
-	margin-left: 30%;
-	padding: 50px;
-
+	margin-left: auto;
+	margin-right: auto;
+	padding: 16px 50px;
 }
 .footerLogo{
 	width: 30%;
 	padding-top: 200px;
 	margin-left: 35%;
 }
-footer ul{
+footer ul {
 	list-style: none;
 }
 footer > div > ul > li > img{
 	width: 50px;
 	margin: 15px;
 }
-.footerRight{
-	float: right;
-	transform: translateY(-100%);
+
+.footer-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+.footer-col:last-child {
 	margin-right: 50px;
 }
-.footerRight > h3{
-	float: right;
+
+.footer-col:last-child > h3 {
+	text-align: right;
 	color: #66CC00;
 	margin-bottom: 150px;
 }
-.footerRight > h2{
-	float: right;
+
+.footer-col:last-child > h2{
+	text-align: right;
 	margin-right: 100px;
 }
-.footerRight > p{
-	float: right;
+
+.footerRight > p {
+	text-align: right;
 	margin-bottom: 100px;
 }
 footer ul > li {
@@ -333,12 +414,23 @@ footer ul > li > h3{
 	margin-left: 15px;
 }
 
-.thumbnail{
-	/*max-width: 20%;*/
-	padding: 20px;
-}
-.memeFlex{
+.some-row {
 	display: flex;
-	justify-content: space-around;
+	justify-content: flex-start;
 	align-items: center;
+	padding-left: 16px;
+	margin-left: 90px;
+}
+
+.some-row a {
+	display: block;
+	margin-right: 22px;
+}
+
+.some-row a:nth-child(2) {
+	margin-right: 6px;
+}
+
+.some-row a:last-child {
+	margin-right: 0;
 }
