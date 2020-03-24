@@ -1,0 +1,333 @@
+*{
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: Helvetica, sans-serif;
+}
+.center{
+	text-align: center;
+	align-content: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.logo{
+	margin-top: 25px;
+	height: 7.5vh;
+}
+header{
+	min-height: 100vh;
+	background: url("img/icemelt.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+header h1{
+	font-size: 5vh;
+	color: white;
+	margin: 2.5% 20%;
+	margin-top: 7.5%;
+}
+header h5{
+	text-decoration: underline;
+	text-decoration-color: #66CC00;
+	font-size: 4vh;
+	font-weight: 600;
+	color: white;
+	margin-left: 10%;
+	margin-right: 20px;
+	display: inline-block;
+}
+header > div > a > img {
+	height: 7vh;
+	transform: translateY(40%);
+	background: white;
+	padding:10px;
+	border-radius: 20px;
+}
+body{
+	background: #ADC0CF;
+}
+#video{
+	display: grid;
+	grid-template-columns: 50px 3fr 60px 4fr 50px;
+	color: white;
+}
+.startCampaign > * {
+	margin: 15px;
+}
+.startCampaign{
+	background: #6c0;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	margin-top: -100px;
+	padding: 50px;
+	margin-bottom: 100px;
+}
+.startCampaign span{
+	display: inline-block;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+.startCampaign input{
+	width: 60%;
+	padding: 10px;
+	margin-top: 0px;
+	/*border-radius: 20px;*/
+}
+.startCampaign > p{
+	margin-left: 30px; 
+}
+.startCampaign > h6{
+	margin-bottom: 80px;
+	font-size: 2em
+}
+.startCampaign button{
+	display: block;
+	background: white;
+	border-radius: 20px;
+	padding: 10px;
+}
+.startCampaign button h6{
+	font-size: 1.8em;
+}
+.where{
+	margin-bottom: 0px;
+}
+.video{
+	grid-column-start: 4;
+	grid-column-end: 5;
+	margin-top: 50px; 
+	margin-bottom: 175px
+}
+.video video{
+	width: 100%;
+	/*height: 100%;*/
+}
+#learnMore{
+	width: 98%;
+	margin-left: 1%;
+	background: #fff;
+}
+
+
+
+
+
+
+
+
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+
+
+
+.container{
+	width: 40%;
+	margin-left: 30%;
+}
+#learnMore{
+	background: #fff;
+}
+#learnMore > h1{
+	color:#304656;
+	font-size: 4em;
+	padding-left: 75px;
+	padding-top: 50px;
+	padding-bottom: 75px;
+}
+.containerFlex{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding-bottom: 150px;
+}
+.article{
+	width: 40%;
+	position: relative;
+	margin: 50px 0px;
+}
+.article img{
+	/*width: 40%;*/
+	width: 30%;
+	display: inline-block;
+	float: left;
+	margin: 20px;
+	margin-top: 0px;
+}
+b{
+	font-weight: 900;
+	margin-right: 25px;
+}
+.article > h6{
+	color:#2980B9;
+}
+.article > h5{
+	font-weight: 900;
+	margin: 10px;
+}
+.article > span{
+	display: block;
+	margin-bottom: 10px;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+.learnFooter{
+	background: #fff;
+	width: 100%;
+}
+.learnFooter > h1{
+	color: white;
+	background: #66CC00;
+	float: right;
+	transform: translateY(-100%);
+	padding: 30px 100px;
+}
+
+#memes{
+	background: #3B6481;
+	width: 98%;
+    margin-left: 1%;
+}
+#game{
+	width: 98%;
+	margin-left: 1%;
+	background: #D1D1D1;
+}
+#game img{
+	width: 80%;
+	margin-left: 10%;
+}
+footer{
+	width: 98%;
+	margin-left: 1%;
+	background: #fff;
+	padding-bottom: 100px;
+}
+footer > img{
+	width: 40%;
+	display: block;
+	margin-left: 30%;
+	padding: 50px;
+
+}
+.footerLogo{
+	width: 30%;
+	padding-top: 200px;
+	margin-left: 35%;
+}
+footer ul{
+	list-style: none;
+}
+footer > div > ul > li > img{
+	width: 50px;
+	margin: 15px;
+}
+.footerRight{
+	float: right;
+	transform: translateY(-100%);
+	margin-right: 50px;
+}
+.footerRight > h3{
+	float: right;
+	color: #66CC00;
+	margin-bottom: 150px;
+}
+.footerRight > h2{
+	float: right;
+	margin-right: 100px;
+}
+.footerRight > p{
+	float: right;
+	margin-bottom: 100px;
+}
+footer ul > li {
+	margin: 50px;
+}
+footer ul > li > h3{
+	font-size: 1.5em;
+	margin-left: 15px;
+}

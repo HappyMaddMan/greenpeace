@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Greenpeace</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+	<header>
+		<nav class="center">
+			<img src="img/logo.svg" alt="Greenpeace logo" class="logo">
+		</nav>
+		<h1>#SaveThePoles</h1>
+		<div>
+			<h5>Start your own campaign on</h5>
+			<a href="https://www.graesrod.org/">
+				<img src="img/graesrod.png" alt="graesrod">
+			</a>
+		</div>
+	</header>
+	<main>
+		<section id="video">
+			<div class="startCampaign">
+				<h6 class="center">Let's do this together</h6>
+				<p>Email</p>
+				<input type="text" placeholder="example@gmail.com">
+				<p class="where">Where?</p>
+				<span>This is a national campaign or global campaign without specific location</span>
+				<input type="text" placeholder="Enter a location">
+				<button class="center"><h6>Start a campaign</h6></button>
+			</div>
+			<div class="video">
+				<video src="img/video.mp4" controls></video>
+				<!-- <iframe src="https://www.youtube.com/embed/njzYgbgwx5I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+			</div>
+		</section>
+		<section id="learnMore">
+			<h1>Wanna learn more?</h1><br>
+			<div class="containerFlex">
+				<div class="article">
+					<a href="fun-facts-about-penguins.html"><img src="img/gentoo-penguins.jpg" alt="penguins"></a>
+					<h6><b>STORY</b><i>#SaveThePoles</i></h6>
+					<h5><a href="fun-facts-about-penguins.html">10 Fun facts about penguins</a></h5>
+					<!-- <span>By: Author. 19 March</span> -->
+					<p>Penguins are amazing birds! Unlike those birds we usually spot in our backyards, these creatures have adapted to their cold environment, and this alone makes them pretty special.</p>
+				</div>
+				<div class="article">
+					<a href="norwegian-teens.html"><img src="img/oil-drilling.jpg" alt="iceice"></a>
+					<h6><b>STORY</b><i>#SaveThePoles</i></h6>
+					<h5><a href="norwegian-teens.html"></a>Bold Norwegian Teen Is Fighting Her Government on Arctic Oil Drilling</h5>
+					<!-- <span>By: Author. 19 March</span> -->
+					<p>Elina Berg. Does it ring a bell? If it doesn't, it's time for a refresher: she's that badass teen who is a member of an environmental group suing the Norwegian government over the issuing of new oil drilling licenses in the Arctic.</p>
+				</div>
+				<div class="article">
+					<a href="polar-bears.html"><img src="img/wild-polar-bears.jpg" alt="iceice"></a>
+					<h6><b>STORY</b><i>#SaveThePoles</i></h6>
+					<h5><a href="polar-bears.html">Polar bears - the largest predators on land</a></h5>
+					<!-- <span>By: Author. 19 March</span> -->
+					<p>Polar bears are marine mammals who live on the sea ice of the Arctic Ocean. With their thick layer of body fat and a water-repellent fur, they are well equipped to withstand cold water and air.</p>
+				</div>
+				<div class="article">
+					<a href="summer.html"><img src="img/ten_teens.jpg" alt="iceice"></a>
+					<h6><b>STORY</b><i>#SaveThePoles</i></h6>
+					<h5><a href="summer.html">What Are You Doing This Summer?</a></h5>
+					<!-- <span>By: Author. 19 March</span> -->
+					<p>Ten teenagers have flown to Greenland for a four-week Arctic expedition to show their headteacher that they are not a bunch of wusses.</p>
+				</div>
+			</div>
+			<div class="learnFooter">
+				<h1>Tackle the Issue & have fun</h1>
+			</div>
+		</section>
+		<section id="memes">
+						<!-- Container for the image gallery -->
+			<div class="container">
+
+			  <!-- Full-width images with number text -->
+			  <div class="mySlides">
+			    <!-- <div class="numbertext">1 / 6</div> -->
+			      <img src="img/memes/5.jpg" style="width:100%">
+			  </div>
+
+			  <div class="mySlides">
+			    <!-- <div class="numbertext">2 / 6</div> -->
+			      <img src="img/memes/8.jpg" style="width:100%">
+			  </div>
+
+			  <div class="mySlides">
+			    <!-- <div class="numbertext">3 / 6</div> -->
+			      <img src="img/memes/4.jpg" style="width:100%">
+			  </div>
+
+			  <div class="mySlides">
+			    <!-- <div class="numbertext">4 / 6</div> -->
+			      <img src="img/memes/6.jpg" style="width:100%">
+			  </div>
+
+			  <div class="mySlides">
+			    <!-- <div class="numbertext">5 / 6</div> -->
+			      <img src="img/memes/9.jpg" style="width:100%">
+			  </div>
+
+			  <div class="mySlides">
+			    <!-- <div class="numbertext">6 / 6</div> -->
+			      <img src="img/memes/13.jpg" style="width:100%">
+			  </div>
+
+			  <!-- Next and previous buttons -->
+			  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			  <!-- Image text -->
+			  <div class="caption-container">
+			    <p id="caption"></p>
+			  </div>
+
+			  <!-- Thumbnail images -->
+			  <div class="row">
+			    <div class="column">
+			      <img class="demo cursor" src="img/memes/5.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
+			    </div>
+			    <div class="column">
+			      <img class="demo cursor" src="img/memes/8.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+			    </div>
+			    <div class="column">
+			      <img class="demo cursor" src="img/memes/4.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
+			    </div>
+			    <div class="column">
+			      <img class="demo cursor" src="img/memes/6.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+			    </div>
+			    <div class="column">
+			      <img class="demo cursor" src="img/memes/9.jpg" style="width:100%" onclick="currentSlide(5)" alt="">
+			    </div>
+			    <div class="column">
+			      <img class="demo cursor" src="img/memes/13.jpg" style="width:100%" onclick="currentSlide(6)" alt="">
+			    </div>
+			  </div>
+			</div>
+		</section>
+		<section id="game">
+			<a href="#">
+				<img src="img/game.png" alt="">
+			</a>
+		</section>
+	</main>
+	<footer>
+		<img src="img/logo.svg" alt="logo" class="footerLogo">
+		<img src="img/graesrod.png" alt="graesrod">
+		<div>
+			<ul>
+				<li><h3><a href="#">About Græsrod</a></h3></li>
+				<li><h3><a href="#">About GreenPeace</a></h3></li>
+				<li><h3><a href="#">Find Campaigns</a></h3></li>
+				<li><h3><a href="#">Press</a></h3></li>
+				<li>
+					<a href="#">
+						<img src="img/insta.png" alt="instagram">
+					</a>
+					<a href="">
+						<img src="img/fb.png" alt="facebook">
+					</a>
+					<a href="">
+						<img src="img/yt.png" alt="youtube">
+					</a>
+				</li>
+			</ul>
+			<div class="footerRight">
+				<h2>#SaveThePoles</h2><br>
+				<h3>#PowerToThePeople</h3><br>
+				<p>Designed by the Purple Turtles for Greenpeace</p><br>
+				<h3>&copy; 2020 Copyright. All rights reserved</h3><br>
+			</div>
+			
+		</div>
+		
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>
