@@ -136,7 +136,7 @@ body{
 .next {
   cursor: pointer;
   position: absolute;
-  top: 40%;
+  top: 69%;
   width: auto;
   padding: 16px;
   margin-top: -50px;
@@ -186,7 +186,8 @@ body{
 /* Six columns side by side */
 .column {
   float: left;
-  width: 16.66%;
+  max-width: 16.66%;
+  max-height: 50px;
 }
 
 /* Add a transparency effect for thumnbail images */
@@ -330,4 +331,14 @@ footer ul > li {
 footer ul > li > h3{
 	font-size: 1.5em;
 	margin-left: 15px;
+}
+
+.thumbnail{
+	/*max-width: 20%;*/
+	padding: 20px;
+}
+.memeFlex{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
