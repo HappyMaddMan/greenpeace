@@ -2,6 +2,7 @@
 	margin: 0px;
 	box-sizing: border-box;
 	font-family: Helvetica, sans-serif;
+	scroll-behavior: smooth;
 }
 
 .center{
@@ -187,7 +188,7 @@ body{
 .next {
   cursor: pointer;
   position: absolute;
-  top: 40%;
+  top: 60%;
   width: auto;
   padding: 16px;
   margin-top: -50px;
@@ -434,3 +435,16 @@ footer ul > li > h3{
 .some-row a:last-child {
 	margin-right: 0;
 }
+.thumbnail{
+	/*max-width: 20%;*/
+	padding: 20px;
+}
+.memeFlex{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+/*.video iframe{
+	max-width: 100%;
+	min-height: 300px;
+}*/

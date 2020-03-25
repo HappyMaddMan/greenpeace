@@ -20,13 +20,13 @@ header{
 	background-position: center;
 }
 .polarBear{
-	background: url("img/wild-polar-bears.jpg");
+	background: url("img/polar_bears_infographic.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 .summer{
-	background: url("img/ten_teens.jpg");
+	background: url("img/teenageronice.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -96,4 +96,27 @@ main>a>img{
 }
 .credits p{
 	margin: 25px 100px;
+}
+.footer-row{
+	margin-top: 50px;
+}
+
+.flexNav{
+	display: flex;
+	/*height: 7.5vh;*/
+	background: #384C5F;
+	justify-content: space-around;
+	padding-top: 20px;
+}
+.flexNav>div{
+	/*vertical-align: middle; */
+}
+.flexNav >div>a>h4{
+	text-transform: uppercase;
+	color: white
+}
+.flexNav >div>a>img{
+	height: 70%;
+	vertical-align: middle;
+	margin-top: -5px;
 }
