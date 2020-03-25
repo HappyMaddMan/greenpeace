@@ -1,5 +1,13 @@
+function scrollDown() {
+    let main = document.querySelector("main");
+    main.scrollIntoView({ behavior: "smooth" });
+}
+
+
 var slideIndex = 1;
-showSlides(slideIndex);
+
+
+
 
 // Next/previous controls
 function plusSlides(n) {
@@ -28,3 +36,21 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+window.addEventListener("DOMContentLoaded", function() {
+  // Index
+  if (window.location.pathname == "/" || window.location.pathname.endsWith("index.html")) {
+    showSlides(slideIndex);
+  }
+
+  // Setup go back links
+  let links = document.querySelectorAll(".go-back-link");
+  if (links && links.length) {
+    links.forEach(function(l) {
+      l.addEventListener("click", function(e) {
+        e.preventDefault();
+        window.history.go(-1);
+      });
+    });
+  }
+});
